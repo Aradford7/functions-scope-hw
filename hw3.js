@@ -1,6 +1,6 @@
 console.log('JS is runnning and running and running')
 
-//Verbal questions
+//1.Verbal questions
 //Write answers to the following questions as comments.
 
 //What is the difference between a parameter and an argument?
@@ -17,7 +17,7 @@ console.log('JS is runnning and running and running')
     //If the return is not in the same block of code it change the value
     //The way it was declared, like var, let , constant can affect
 
-//Write a function checkPalindrome that accepts a single argument, a string.
+//2.Write a function checkPalindrome that accepts a single argument, a string.
 // Yes, you've done it before, but do it again. Later in this assignment
 // we're gonna beef up our palindrome function some. See if you can do it
 // without looking back at your previous answer. The function should return 
@@ -31,7 +31,7 @@ console.log('JS is runnning and running and running')
 //if function return true == palindrome
 //if function return false ==! palindrome
 //make function with .Uppercase for capital letters
-
+/*
 var str = ["eye", "dad", "bro", "mom"]
 function palindrome(str) {
     str = str.toLowerCase().replace(/[\W_]/g, '');
@@ -41,6 +41,31 @@ function palindrome(str) {
       }
     }
     return true;
-  }
+}
+palindrom("eye");
+palindrom("bro"); */
   
-  palindrome("eye");
+ //3. Digit Sum
+ //Write a function sumDigits taht accepts a number and returns the
+ //sum of the digits
+
+ //PseudoCode
+ //Write a fx called "sumDigits"
+ //give a number, "sumDigits = return of all sum of numbers"
+//var output = sumDigits(1148)
+//console.log(output); //anwser 14
+
+/*function sumDigits(num){
+    var numString = num.toString(); // var numstring =1148
+    var start = 0;
+    var sum = 0;
+    if (num < 0){ //if negative
+        sum -= Number(numString[1]);
+        start += 2;
+    }
+    for (var i = start; i < numString.length; i++) {
+        sum += Number(numString[i]);
+    }
+    return sum;
+}
+console.log(sumDigits(1148)); //answer 14  */
