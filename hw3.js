@@ -32,6 +32,15 @@ console.log('JS is runnning and running and running')
 //if function return false ==! palindrome
 //make function with .Uppercase for capital letters
 
-checkPalindrome = () => {
-    
-}
+var str = ["eye", "dad", "bro", "mom"]
+function palindrome(str) {
+    str = str.toLowerCase().replace(/[\W_]/g, '');
+    for(var i = 0, len = str.length - 1; i < len/2; i++) {
+      if(str[i] !== str[len-i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  palindrome("eye");
