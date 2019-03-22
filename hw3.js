@@ -69,3 +69,20 @@ palindrom("bro"); */
     return sum;
 }
 console.log(sumDigits(1148)); //answer 14  */
+
+//4.Pythagoras
+//Write a function calculateSide taht takes two arguments:
+//side A side B and return the solution for side C
+
+//PseudoCode
+// A^2 + B^2 = C^2
+//make function calculateSide with 2 argu
+// each is exp of 2 Math pow
+// for sum2 = A2 + B2   Math.SQRT2 <takes square root
+//C^1/2 = A^2 + B^2 if 4 and 3
+// 16+9 = 25^1/2 = 5 goal is 5
+
+function calculateSide(sideA, sideB){
+    return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+}
+console.log(calculateSide(4,3));
